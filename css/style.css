@@ -77,18 +77,18 @@ header>div>div {
   width: 100%;
   padding-top: 50px;
   margin-bottom: 30px;
-  /*display: -webkit-box;
-  display: -ms-flexbox;*/
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  /*-webkit-box-orient: horizontal;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;*/
-          /*flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;*/
+      -ms-flex-pack: justify;
           justify-content: space-between;
-  /*-webkit-box-align: center;
-      -ms-flex-align: center;*/
+  -webkit-box-align: center;
+      -ms-flex-align: center;
           align-items: flex-end;
 }
 header>div>div>a, header>div>div>div#logo_panier  {
@@ -106,7 +106,6 @@ header>div>div>div>p {
   line-height: 1.7;
 
 }
-/* TODO: faire la div du p et i du header en flexbox */
 header>div>div>div#logo_panier {
   display: flex;
   flex-direction: row-reverse;
