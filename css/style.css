@@ -74,48 +74,53 @@ header>div>p {
   padding: 5px 0;
 }
 header>div>div {
+  width: 100%;
   padding-top: 50px;
   margin-bottom: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  /*display: -webkit-box;
+  display: -ms-flexbox;*/
   display: flex;
-  -webkit-box-orient: horizontal;
+  /*-webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: row;*/
+          /*flex-direction: row;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
+      -ms-flex-pack: justify;*/
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  /*-webkit-box-align: center;
+      -ms-flex-align: center;*/
+          align-items: flex-end;
+}
+header>div>div>a, header>div>div>div#logo_panier  {
+  width: 50%;
 }
 header>div>div>a>img {
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
 }
-header>div>div>p {
+header>div>div>div>p {
   font-size: 1rem;
   text-align: right;
   padding-right: 10px;
   font-weight: bold;
-  line-height: 1.5;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
+  line-height: 1.7;
+
 }
-
 /* TODO: faire la div du p et i du header en flexbox */
-
-header>div>div>p span {
+header>div>div>div#logo_panier {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+}
+header>div>div>div#logo_panier p span {
   display: block;
   font-size: 1.2rem;
+  text-align: right;
 }
-/*header>div>div>p i, header>div>div>p {
+header>div>div>div p i, header>div>div>p {
   float: right;
-}*/
-header>div>div i.fa-3x {
+}
+header>div>div>div i.fa-3x {
   /*float: right;*/
   font-size: 4rem;
   opacity: 0.8;
