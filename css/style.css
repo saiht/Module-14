@@ -95,24 +95,29 @@ header>div>div>a>img {
           transform: scale(0.8);
 }
 header>div>div>p {
-  font-size: 1.4rem;
-  height: 65px;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  font-size: 1rem;
+  text-align: right;
+  padding-right: 10px;
+  font-weight: bold;
+  line-height: 1.5;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
-header>div>div>p i.fa-2x {
-  font-size: 2.4em;
+
+/* TODO: faire la div du p et i du header en flexbox */
+
+header>div>div>p span {
+  display: block;
+  font-size: 1.2rem;
+}
+/*header>div>div>p i, header>div>div>p {
+  float: right;
+}*/
+header>div>div i.fa-3x {
+  /*float: right;*/
+  font-size: 4rem;
   opacity: 0.8;
 }
 header>div nav ul li a, footer ul#menu1_footer li a, main section#tea_palette ul li, footer nav#menu2_footer ul.nav_footer_item li h5 {
@@ -147,17 +152,18 @@ header>div nav ul li a:last-child {
 /**** Start Section 1 ****/
 main section:first-child {
   margin: 0 auto;
+  background-color: #fff;
   position: relative;
 }
 main section:first-child img {
-  width: 100%;
+  width: 98%;
   height: auto;
-  border: 10px solid #fff;
+  margin: 1%;
 }
 main section:first-child>div {
   position: absolute;
-  top: 25px;
-  left: 10px;
+  top: 4%;
+  left: 1%;;
   background-color: rgba(150,176,17, 0.8);
   padding-left: 20px;
   width: 31%;
@@ -241,6 +247,9 @@ main section#nouveautes article h3 {
   font-size: 1.8rem;
   text-align: left;
 }
+main section#nouveautes article h3>img {
+  vertical-align: text-bottom;
+}
 main section#nouveautes article h4 {
   font-size: 1.8rem;
   margin: 10px 0;
@@ -249,9 +258,6 @@ main section#nouveautes article>img {
   width: 80%;
   height: auto;
   margin: 0 auto;
-}
-main section#nouveautes article h3>img {
-  vertical-align: text-bottom;
 }
 main section#nouveautes article:first-child {
   margin-right: 2%;
