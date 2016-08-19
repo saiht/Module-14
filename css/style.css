@@ -30,13 +30,14 @@ ul {
 }
 a {
 	text-decoration: none;
-  color: #989898;
 }
 p {
   margin: 0;
 }
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h5 {
   font-family: "Amaranth", cursive, arial;
+}
+h1, h2, h3, h4, h5, h6 {
   color: #fff;
   font-weight: normal;
 }
@@ -46,7 +47,7 @@ h1 {
 }
 main {
   background-color: #F2F2F2;
-  padding-top: 25px;
+  padding: 25px 0;
 }
 main section, header>div {
   max-width: 75%;
@@ -95,7 +96,7 @@ header>div>div>p i.fa-2x {
   font-size: 2.4em;
   opacity: 0.8;
 }
-header>div nav ul li a, footer nav#menu1_footer a, main section#tea_palette ul li {
+header>div nav ul li a, footer ul#menu1_footer li a, main section#tea_palette ul li, footer nav#menu2_footer ul.nav_footer_item li h5 {
   text-transform: uppercase;
   font-size: 1.3em;
 }
@@ -105,7 +106,7 @@ header>div nav ul {
   justify-content: space-between;
   padding-bottom: 25px;
 }
-header>div nav ul li a {
+header>div nav ul li a, footer ul#menu1_footer li a {
   color: rgba(255, 255, 255, 0.9);
 }
 header>div nav ul li a:first-child {
@@ -126,9 +127,6 @@ main section:first-child img {
   width: 100%;
   height: auto;
   border: 10px solid #fff;
-  /*-webkit-box-shadow: 1px 1px 0px 10px rgba(255,255,255,1);
-  -moz-box-shadow: 1px 1px 0px 10px rgba(255,255,255,1);
-  box-shadow: 1px 1px 0px 10px rgba(255,255,255,1);*/
 }
 main section:first-child>div {
   position: absolute;
@@ -227,8 +225,50 @@ main section#nouveautes article:last-child {
   margin-left: 2%;
 }
 /**** End Section 3 ****/
-
-
-
-
 /**** End Main ****/
+
+/**** Start Footer ****/
+/**** Start menu1_footer ****/
+footer {
+  background: url("../img/bg.jpg") bottom center no-repeat;
+  text-align: center;
+  background-size: 70% auto;
+  margin: 0 auto;
+  background-color: #96B011;
+  background-size: 52.5% auto;
+  padding-bottom: 20px;
+}
+footer ul#menu1_footer {
+  margin: 0 auto;
+  padding: 15px 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+footer ul#menu1_footer li a {
+  color: rgba(255, 255, 255, 0.7);
+}
+footer ul#menu1_footer li a i {
+  display: block;
+}
+/**** End menu1_footer ****/
+
+/**** Start menu2_footer ****/
+footer nav#menu2_footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+footer nav#menu2_footer ul.nav_footer_item li:first-child h5 {
+  margin-bottom: 10px;
+}
+footer nav#menu2_footer ul.nav_footer_item li a {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: bold;
+}
+footer nav#menu2_footer ul.nav_footer_item li h5 {
+  font-size: 1.5rem;
+}
+/**** End menu2_footer ****/
+/**** End Footer ****/
